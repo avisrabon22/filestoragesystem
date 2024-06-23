@@ -2,7 +2,7 @@ package com.avijit.filestoragesystem.Controller.UserControllers;
 
 
 import com.avijit.filestoragesystem.DTO.UserDto.UserSignupRequestDto;
-import com.avijit.filestoragesystem.Service.UserSignupService;
+import com.avijit.filestoragesystem.Service.UserService.UserSignupService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

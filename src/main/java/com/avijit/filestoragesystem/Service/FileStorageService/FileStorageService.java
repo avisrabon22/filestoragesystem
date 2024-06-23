@@ -8,11 +8,13 @@ import org.springframework.stereotype.Service;
 public class FileStorageService {
 
     private final FileStorageRepo fileStorageRepo;
-    private final FileStorageStrategyFactory fileStorageStrategyFactory;
+    private final FileStorageFactory fileStorageStrategyFactory;
 
 
-    public FileStorageService(FileStorageRepo fileStorageRepo, FileStorageStrategyFactory fileStorageStrategyFactory) {
+    public FileStorageService(FileStorageRepo fileStorageRepo, FileStorageFactory fileStorageStrategyFactory) {
         this.fileStorageRepo = fileStorageRepo;
         this.fileStorageStrategyFactory = fileStorageStrategyFactory;
     }
+
+
 }

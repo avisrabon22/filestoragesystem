@@ -6,7 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 @Component
-public class FileStorageStrategyImpl implements FileStorageStrategy{
+public class LocalFileStorageStrategyImpl implements FileStorageStrategyInterface {
     @Override
     public String storeFile(MultipartFile file) throws IOException {
         return "";

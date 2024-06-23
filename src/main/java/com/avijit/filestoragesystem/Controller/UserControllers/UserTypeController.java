@@ -3,7 +3,7 @@ package com.avijit.filestoragesystem.Controller.UserControllers;
 import com.avijit.filestoragesystem.DTO.UserDto.UserTypeRequestDto;
 import com.avijit.filestoragesystem.DTO.UserDto.UserTypeResponsDto;
 import com.avijit.filestoragesystem.Exception.UserTypeEmpty;
-import com.avijit.filestoragesystem.Service.UserTypeService;
+import com.avijit.filestoragesystem.Service.UserService.UserTypeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

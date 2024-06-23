@@ -1,4 +1,4 @@
-package com.avijit.filestoragesystem.Service;
+package com.avijit.filestoragesystem.Service.UserService;
 
 
 import com.avijit.filestoragesystem.DTO.UserDto.UserTypeRequestDto;

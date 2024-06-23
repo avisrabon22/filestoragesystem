@@ -4,7 +4,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
-public interface FileStorageStrategy {
+public interface FileStorageStrategyInterface {
     String storeFile(MultipartFile file) throws IOException;
     byte[] retrieveFile(String filePath) throws IOException;
 }
