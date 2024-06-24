@@ -3,6 +3,9 @@ package com.avijit.filestoragesystem.Service.FileStorageService;
 
 import com.avijit.filestoragesystem.Repo.FileStorageRepo;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
 
 @Service
 public class FileStorageService {
@@ -16,5 +19,9 @@ public class FileStorageService {
         this.fileStorageStrategyFactory = fileStorageStrategyFactory;
     }
 
+    public String storeFile(MultipartFile file, String type) throws IOException {
+        FileStorageStrategyInterface fileStorageStrategy = fileStorageStrategyFactory.getFileStorageStrategy(type);
+        return fileStorageStrategy.storeFile(file,type);
+    }
 
 }
