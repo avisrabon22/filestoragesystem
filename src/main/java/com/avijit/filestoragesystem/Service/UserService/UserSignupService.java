@@ -34,6 +34,9 @@ public class UserSignupService {
 
        if (userType.isEmpty())
            throw  new UserTypeEmpty("User type not found");
+        if (userType.get().equals("ADMIN")) {
+            throw new UserTypeEmpty("Wrong user type");
+        }
 
         UserModel userModel = new UserModel();
         userModel.setName(userSignupRequestDto.getName());

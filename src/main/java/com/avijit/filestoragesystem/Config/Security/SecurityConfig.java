@@ -50,7 +50,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/signup").permitAll()
                         .requestMatchers("/api/v1/login").permitAll()
                         .requestMatchers("/api/v1/usertype/getusertypesignup").permitAll()
-
+                        .requestMatchers("/api/v1/upload_file","/api/v1/download_file").hasRole("USER")
                         .anyRequest().authenticated());
         http.sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         http.exceptionHandling((exceptionHandling) -> exceptionHandling.authenticationEntryPoint(unauthorizedHandler));
