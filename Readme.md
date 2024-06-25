@@ -30,7 +30,7 @@ This project implements a file storage system using Spring Boot. It supports aut
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/file-storage-system.git
+git clone https://github.com/avisrabon22/filestoragesystem.git
 cd file-storage-system
 Configure MySQL Database
 Create a MySQL database named file_storage.
